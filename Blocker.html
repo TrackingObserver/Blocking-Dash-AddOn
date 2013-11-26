@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+    <head>
+        <title>TrackingObserver: Categorical blocking</title>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+            <style>
+            body {
+            font-family: 'Open Sans', sans-serif;
+            }
+            </style>
+            <style type="text/css">
+            td {
+            border:1 solid black;
+            }
+            td.padded {
+            padding:0px 15px 15px;
+            }
+            </style>
+            <script src="Blocker.js"></script>
+            </head>
+            
+            <body>
+            
+           
+            
+            <h1> TrackerRanker </h1>
+            
+            This page dumps cumulative tracking data to help you block trackers by category. <br><br>
+            <div id="total"></div>
+            <hr>
+            
+            <h2>Blocking Assistant</h2>
+            
+            <div id="button" align="left" width="1000px">
+            <input type="radio" name="group1" value="Low" id="L"> <u>Low</u>: Only blocks Category C trackers.<br>
+            <input type="radio" name="group1" value="Medium" id="M"> <u>Medium</u>: Recommended. Blocks Category B, C, and D trackers. <br>
+            <input type="radio" name="group1" value="High" id="H"> <u>High</u>: Blocks all trackers.
+            <hr>
+            <input type="checkbox" id="advanced"> Advanced Mode<br>
+            </div>
+           
+            <table style="text-align:center;border:1px solid black;border-collapse:collapse;padding:10px;">
+            
+            <tr>
+            
+            <td style="border:1px solid black;"><h2><font color = "009900"> Category A </h2>
+            </font></td>
+            
+            <td style="border:1px solid black;"><h2> <font color = "FF6600"> Category B </h2>
+            </font></td>
+            
+            <td style="border:1px solid black;"> <h2> <font color = "FF0000"> Category C </h2>
+            </font></td>
+            
+            <td style="border:1px solid black;"> <h2> <font color = "FF6600"> Category D </h2>
+            </font></td>
+            
+            <td style="border:1px solid black;"><h2> <font color = "009900"> Category E </h2>
+            </font></td>
+            
+            </tr>
+            
+            <tr>
+            <td style="border:1px solid black;" class = "padded"><div id="CatA"></div></td>
+            
+            <td style="border:1px solid black;" class = "padded"><div id="CatB"></div></td>
+            
+            <td style="border:1px solid black;" class = "padded"><div id="CatC"></div></td>
+            
+            <td style="border:1px solid black;" class = "padded"><div id="CatD"></div></td>
+            
+            <td style="border:1px solid black;" class = "padded"><div id="CatE"></div></td>
+            </tr>
+            </table>
+            
+            
+            
+            </body>
+            </html>
